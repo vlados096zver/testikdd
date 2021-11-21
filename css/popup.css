@@ -1,0 +1,431 @@
+.popup {
+	position: fixed;
+	z-index: 10;
+	top: 0px;
+	width: 100%;
+	height: 100vh;
+	transform: translateX(-100%);
+	background-color: #002638;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 0 8px;
+	padding-top: 17px;
+	transition: transform 0.25s ease-in-out;
+}
+
+.popup--active {
+	transform: translateX(0);
+}
+
+.popup--menu {
+	display: none;
+}
+
+.popup .mob-menu__wrap {
+	padding-bottom: 18px;
+	border-bottom: 1px solid rgba(233, 232, 244, 0.1);
+	margin-bottom: 14px;
+}
+
+.popup .mob-menu__link {
+	color: #fff;
+	padding-top: 20px;
+}
+
+.popup .mob-menu__link:after {
+	width: 15px;
+	height: 15px;
+	background-size: 15px;
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(254deg) brightness(104%) contrast(101%);
+}
+
+.popup .mob-menu__count {
+	top: -7px;
+	right: 0px;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #fff;
+}
+
+.popup .main-header__map {
+	margin-bottom: 26px;
+}
+
+.popup .main-footer__text {
+	padding-bottom: 12px;
+}
+
+.popup .main-footer__socials {
+	padding-top: 0px;
+}
+
+.popup__search-wrap {
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 22px;
+}
+
+.popup__input {
+	display: block;
+	width: calc(100% - 35px);
+	min-height: 35px;
+	font-size: 13px;
+	line-height: 1.2;
+	color: #9391a7;
+	border: none;
+	padding: 8px 10px;
+	padding-left: 3px;
+}
+
+.popup__btn {
+	display: block;
+	width: 35px;
+	height: 35px;
+	background-color: #fff;
+	border: none;
+	outline: none;
+	padding: 0px;
+}
+
+.popup__btn svg {
+	display: block;
+	fill: transparent;
+	stroke: #9391a7;
+	fill: transparent;
+	width: 12px;
+	height: 12px;
+	margin: 0 auto;
+}
+
+.popup__list {
+	padding-bottom: 10px;
+}
+
+.popup__link {
+	display: block;
+	font-size: 15px;
+	line-height: 1.2;
+	color: #fff;
+	margin-bottom: 14px;
+}
+
+.popup__link--brends,
+.popup__link--discount,
+.popup__link--login {
+	position: relative;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-left: 29px;
+	font-weight: 700;
+}
+
+.popup__link--brends:after,
+.popup__link--discount:after,
+.popup__link--login:after {
+	position: absolute;
+	content: ' ';
+	top: 50%;
+	left: 0px;
+	width: 19px;
+	height: 19px;
+	transform: translateY(-50%);
+	background-repeat: no-repeat;
+	background-size: 19px;
+	background-position: left center;
+	filter: invert(97%) sepia(100%) saturate(0%) hue-rotate(66deg) brightness(105%) contrast(104%);
+}
+
+.popup__link--brends:after {
+	background-image: url(../img/icons/menu/brends.svg);
+}
+
+.popup__link--discount:after {
+	background-image: url(../img/icons/menu/discount.svg);
+}
+
+.popup__link--login {
+	margin-bottom: 26px;
+}
+
+.popup__link--login:after {
+	background-image: url(../img/icons/menu/login.svg);
+	width: 15px;
+	height: 18px;
+	background-size: 15px 18px;
+}
+
+.popup__info {
+	background-color: #0d3547;
+	border-radius: 15px;
+	padding: 10px 22px;
+	padding-bottom: 24px;
+	margin-bottom: 9px;
+}
+
+.popup__shop {
+	font-size: 15px;
+	color: #fff;
+	letter-spacing: 0.15px;
+	margin-right: 38px;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.popup__shop span {
+	display: inline-block;
+	color: #85979f;
+	margin-right: 6px;
+}
+
+.popup__inner {
+	display: none;
+	position: fixed;
+	z-index: 11;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+	transform: translateX(-100%);
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: transform 0.25s ease-in-out;
+}
+
+.popup__inner::-webkit-scrollbar {
+	display: none;
+}
+
+.popup__inner--active {
+	transform: translateX(0);
+}
+
+.popup__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #e9e8f4;
+	padding: 12px 10px;
+}
+
+.popup__holder {
+	margin-top: 22px;
+}
+
+.popup__row {
+	position: relative;
+	z-index: 12;
+}
+
+.popup__title {
+	font-size: 14px;
+	line-height: 1.2;
+	color: #9391a7;
+	padding: 2px 0;
+	padding-left: 34px;
+	font-weight: normal;
+}
+
+.popup__title--catalog {
+	background-image: url(../img/icons/decor/show-catalog.svg);
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.popup__title--active {
+	background-image: none;
+	position: relative;
+	padding-left: 28px;
+}
+
+.popup__title--active:after {
+	position: absolute;
+	content: ' ';
+	top: 50%;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	border-bottom: 2px solid #002638;
+	border-left: 2px solid #002638;
+	transform: translateY(-50%) rotate(45deg);
+}
+
+.popup__elem {
+	background-image: url(../img/icons/decor/block-close.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 12px 12px;
+	display: block;
+	width: 35px;
+	height: 35px;
+	background-color: #fff;
+	border: none;
+	outline: none;
+	padding: 0px;
+}
+
+.popup__col {
+	position: relative;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 1.2;
+	color: #002638;
+	text-transform: uppercase;
+	padding-left: 29px;
+	padding-right: 10px;
+	margin-left: 8px;
+	margin-bottom: 40px;
+	font-weight: 700;
+	transition: 0.25s color;
+}
+
+.popup__col:after,
+.popup__col:before {
+	position: absolute;
+	content: ' ';
+}
+
+.popup__col:after {
+	top: 50%;
+	right: 0px;
+	transform: translate(-50%, -50%) rotate(-90deg);
+	width: 5px;
+	height: 4px;
+	background-size: 5px 4px;
+	background-image: url(../img/icons/arrow-menu.svg);
+}
+
+.popup__col:before {
+	top: -2px;
+	left: 0px;
+	width: 20px;
+	height: 20px;
+	background-size: 20px;
+	background-position: left center;
+	filter: invert(87%) sepia(11%) saturate(1237%) hue-rotate(196deg) brightness(95%) contrast(83%);
+}
+
+.popup__col:hover {
+	color: #3453f3;
+}
+
+.popup__col:hover:after {
+	filter: invert(24%) sepia(80%) saturate(2668%) hue-rotate(227deg) brightness(95%) contrast(100%);
+}
+
+.popup__col--sport:before {
+	background-image: url(../img/icons/menu/sport.svg);
+}
+
+.popup__col--mountain:before {
+	background-image: url(../img/icons/menu/mountain.svg);
+}
+
+.popup__col--bicycle_loads:before {
+	background-image: url(../img/icons/menu/bicycle_loads.svg);
+}
+
+.popup__col--roller_skates:before {
+	background-image: url(../img/icons/menu/roller_skates.svg);
+}
+
+.popup__col--racket_sports:before {
+	background-image: url(../img/icons/menu/racket_sports.svg);
+}
+
+.popup__col--rest_water:before {
+	background-image: url(../img/icons/menu/rest_water.svg);
+}
+
+.popup__col--clothes_shoes:before {
+	background-image: url(../img/icons/menu/clothes_shoes.svg);
+}
+
+.popup__submenu {
+	position: absolute;
+	z-index: 12;
+	top: 82px;
+	transform: translateX(-100%);
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	padding: 0 8px;
+	transition: 0.25s transform ease-in-out;
+}
+
+.popup__submenu--active {
+	transform: translateX(0%);
+}
+
+.popup__user {
+	border-bottom: 1px solid #e9e8f4;
+	padding-bottom: 10px;
+	margin-bottom: 22px;
+}
+
+.popup__subtitle {
+	font-size: 12px;
+	line-height: 1.2;
+	color: #000000;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 22px;
+	font-weight: 700;
+}
+
+.popup__block {
+	display: block;
+	width: max-content;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #002638;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 13px;
+	font-weight: 500;
+	transition: 0.25s color;
+}
+
+.popup__block:hover {
+	color: #3453f3;
+}
+
+.popup__single {
+	font-size: 12px;
+	line-height: 1.2;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 28px 5px;
+	margin-bottom: 9px;
+	font-weight: 700;
+	transition: 0.25s color, 0.25s color;
+}
+
+.popup__single a {
+	display: block;
+	color: #000;
+}
+
+.popup__single:hover {
+	color: #3453f3;
+	border-color: #3453f3;
+}
+
+@media screen and (max-width: 767px) {
+
+.popup--menu {
+	display: block;
+}
+
+.popup__inner {
+	display: block;
+}
+
+}
+

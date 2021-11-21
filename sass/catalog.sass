@@ -1,0 +1,52 @@
+@import 'responsive'
+
+.catalog
+	&__wrap
+		display: flex
+
+	&__item
+		&--aside
+			width: 302px
+			background-color: #f7fafc
+			border: 1px solid #e9e8f4
+			border-radius: 15px
+
+		&--content
+			width: calc(100% - 302px)
+			padding-left: 24px	
+
+	&__holder
+		background-color: #efeff3
+		border-radius: 15px
+		padding: 11px 
+		margin: 10px	
+		margin-bottom: 15px	
+
+	&__row
+		display: flex	
+		flex-wrap: wrap
+
+	&__col
+		cursor: pointer
+		display: inline-block
+		font-size: 14px	
+		line-height: 1.2	
+		color: #262832
+		background-color: #d5ddfc
+		border-radius: 7px
+		padding: 4px 6px
+		padding-right: 22px	
+		margin-bottom: 8px	
+		&:not(:last-child)
+			margin-right: 8px	
+
+	&__subtitle
+		font-size: 18px	
+		line-height: 1.2	
+		color: #002638
+		font-weight: 700
+
+	&__reset
+		font-size: 14px
+		line-height: 1.2
+		color: #fff
